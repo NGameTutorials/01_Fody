@@ -13,4 +13,5 @@ I used the following tools to create this sample:
 
 ## Special Thanks to 
 [Fody Github](https://github.com/Fody/Fody)
+
 [PropertyChanged.Fody Github](https://github.com/Fody/PropertyChanged)
