@@ -5,7 +5,7 @@ using System.Windows.Threading;
 namespace _01_Fody.ViewModels
 {
     [AddINotifyPropertyChangedInterface]
-    public class LearnVM_003
+    internal class LearnVM_003
     {
         public LearnVM_003()
         {

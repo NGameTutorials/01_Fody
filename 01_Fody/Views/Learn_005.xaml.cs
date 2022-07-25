@@ -3,11 +3,11 @@
 namespace _01_Fody.Views
 {
     /// <summary>
-    /// Interaction logic for _02_MVVMWithFody.xaml
+    /// Interaction logic for Learn_004.xaml
     /// </summary>
-    public partial class Learn_003 : Window
+    public partial class Learn_005 : Window
     {
-        public Learn_003()
+        public Learn_005()
         {
             InitializeComponent();
         }
