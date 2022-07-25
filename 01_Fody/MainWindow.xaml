@@ -9,8 +9,9 @@
         Width="800">
 
     <StackPanel>
-        <Button Content="Basic MVVM" Click="BasicMVVM"/>
-        <Button Content="Basic MVVM With Fody" Click="BasicMVVMFody"/>
-        <Button Content="More Advanced MVVM With Fody" Click="MoreAdvancedMVVMFody"/>
+        <Button Content="Learn 01" Click="Learn01"/>
+        <Button Content="Learn 02" Click="Learn02"/>
+        <Button Content="Learn 03" Click="Learn03"/>
+        <Button Content="Learn 04" Click="Learn04"/>
     </StackPanel>
 </Window>

@@ -14,7 +14,7 @@
         <VM:LearnVM_003 />
     </Window.DataContext>
 
-    <Grid>
+    <Grid VerticalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
