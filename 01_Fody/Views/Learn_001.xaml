@@ -13,7 +13,7 @@
         <VM:LearnVM_001 />
     </Window.DataContext>
 
-    <Grid>
+    <Grid VerticalAlignment="Center">
         <ProgressBar Value="{Binding ProgressPercent, Mode=OneWay}"
                      HorizontalAlignment="Stretch"
                      VerticalAlignment="Center"

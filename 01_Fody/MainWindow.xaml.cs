@@ -21,19 +21,24 @@ namespace _01_Fody
                 targetWindow.ShowDialog();
         }
 
-        private void BasicMVVM(object sender, RoutedEventArgs e)
+        private void Learn01(object sender, RoutedEventArgs e)
         {
             ShowWindow(typeof(Learn_001));
         }
 
-        private void BasicMVVMFody(object sender, RoutedEventArgs e)
+        private void Learn02(object sender, RoutedEventArgs e)
         {
             ShowWindow(typeof(Learn_002));
         }
 
-        private void MoreAdvancedMVVMFody(object sender, RoutedEventArgs e)
+        private void Learn03(object sender, RoutedEventArgs e)
         {
             ShowWindow(typeof(Learn_003));
+        }
+
+        private void Learn04(object sender, RoutedEventArgs e)
+        {
+            ShowWindow(typeof(Learn_004));
         }
 
     }
