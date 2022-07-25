@@ -23,22 +23,18 @@ namespace _01_Fody
 
         private void BasicMVVM(object sender, RoutedEventArgs e)
         {
-            ShowWindow(typeof(_01_MVVMWithoutFody));
+            ShowWindow(typeof(Learn_001));
         }
 
         private void BasicMVVMFody(object sender, RoutedEventArgs e)
         {
-            ShowWindow(typeof(_02_MVVMWithFody));
-        }
-
-        private void MoreAdvancedMVVM(object sender, RoutedEventArgs e)
-        {
-
+            ShowWindow(typeof(Learn_002));
         }
 
         private void MoreAdvancedMVVMFody(object sender, RoutedEventArgs e)
         {
-
+            ShowWindow(typeof(Learn_003));
         }
+
     }
 }

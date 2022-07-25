@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace _01_Fody.Views
 {
     /// <summary>
-    /// Interaction logic for _02_MVVMWithFody.xaml
+    /// Interaction logic for _01_MVVMWithoutFody.xaml
     /// </summary>
-    public partial class _02_MVVMWithFody : Window
+    public partial class Learn_001 : Window
     {
-        public _02_MVVMWithFody()
+        public Learn_001()
         {
             InitializeComponent();
         }
