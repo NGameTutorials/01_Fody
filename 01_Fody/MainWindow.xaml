@@ -13,5 +13,6 @@
         <Button Content="Learn 02" Click="Learn02"/>
         <Button Content="Learn 03" Click="Learn03"/>
         <Button Content="Learn 04" Click="Learn04"/>
+        <Button Content="Learn 05" Click="Learn05"/>
     </StackPanel>
 </Window>
