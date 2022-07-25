@@ -35,7 +35,12 @@ namespace _01_Fody.ViewModels
         public int ProgressPercent
         {
             get => _prgperc;
-            set { _prgperc = value; UpdateUI(nameof(ProgressPercent)); }
+            set
+            {
+                if (_prgperc == value) return;
+                _prgperc = value;
+                UpdateUI(nameof(ProgressPercent));
+            }
         }
 
     }
