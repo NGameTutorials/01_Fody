@@ -41,5 +41,9 @@ namespace _01_Fody
             ShowWindow(typeof(Learn_004));
         }
 
+        private void Learn05(object sender, RoutedEventArgs e)
+        {
+            ShowWindow(typeof(Learn_005));
+        }
     }
 }

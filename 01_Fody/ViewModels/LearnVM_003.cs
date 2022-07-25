@@ -5,7 +5,7 @@ using System.Windows.Threading;
 namespace _01_Fody.ViewModels
 {
     [AddINotifyPropertyChangedInterface]
-    public class LearnVM_003
+    internal class LearnVM_003
     {
         public LearnVM_003()
         {
@@ -26,12 +26,6 @@ namespace _01_Fody.ViewModels
             }
         }
 
-        [AlsoNotifyFor(nameof(Message2))]
         public int ProgressPercent { get; set; }
-
-        [DependsOn(nameof(ProgressPercent))]
-        public string Message1 { get => $"Message1: Task completed {ProgressPercent}%"; }
-
-        public string Message2 { get => $"Message2: Task completed {ProgressPercent}%"; }
     }
 }

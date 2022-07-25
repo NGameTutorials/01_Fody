@@ -1,11 +1,20 @@
-﻿using PropertyChanged;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Windows.Threading;
 
 namespace _01_Fody.ViewModels
 {
-    [AddINotifyPropertyChangedInterface]
-    internal class LearnVM_002
+    public class BaseViewModel : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected void AdvancedUpdateUI([CallerMemberName] string propName = "")
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
+
+    }
+
+    internal class LearnVM_002 : BaseViewModel
     {
         public LearnVM_002()
         {
@@ -26,12 +35,17 @@ namespace _01_Fody.ViewModels
             }
         }
 
-        [AlsoNotifyFor(nameof(Message2))]
-        public int ProgressPercent { get; set; }
+        int _prgperc = 0;
+        public int ProgressPercent
+        {
+            get => _prgperc;
+            set
+            {
+                if (_prgperc == value) return;
+                _prgperc = value;
+                AdvancedUpdateUI();
+            }
+        }
 
-        [DependsOn(nameof(ProgressPercent))]
-        public string Message1 { get => $"Message1: Task completed {ProgressPercent}%"; }
-
-        public string Message2 { get => $"Message2: Task completed {ProgressPercent}%"; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Windows.Threading;
 
@@ -30,6 +31,8 @@ namespace _01_Fody.ViewModels
         void UpdateUI(string propName)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
 
+        //void AdvancedUpdateUI([CallerMemberName] string propName = "")
+        //    => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
 
         int _prgperc = 0;
         public int ProgressPercent
@@ -42,6 +45,17 @@ namespace _01_Fody.ViewModels
                 UpdateUI(nameof(ProgressPercent));
             }
         }
+
+        //public int ProgressPercent
+        //{
+        //    get => _prgperc;
+        //    set
+        //    {
+        //        if (_prgperc == value) return;
+        //        _prgperc = value;
+        //        AdvancedUpdateUI();
+        //    }
+        //}
 
     }
 }

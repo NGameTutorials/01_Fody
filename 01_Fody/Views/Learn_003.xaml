@@ -15,25 +15,11 @@
     </Window.DataContext>
 
     <Grid VerticalAlignment="Center">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
         <ProgressBar Value="{Binding ProgressPercent, Mode=OneWay}"
                      HorizontalAlignment="Stretch"
                      VerticalAlignment="Center"
                      Margin="20,0"
-                     Height="12"
-                     Grid.Row="0"/>
-
-        <TextBlock Text="{Binding Message1, Mode=OneWay}" 
-                   TextAlignment="Center"
-                   Grid.Row="1"/>
-
-        <TextBlock Text="{Binding Message2, Mode=OneWay}"
-                   TextAlignment="Center"
-                   Grid.Row="2"/>
+                     Height="12"/>
     </Grid>
+
 </Window>
